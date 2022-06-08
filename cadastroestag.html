@@ -8,28 +8,30 @@
 </head>
 <body>
     <h1>Cadastro de Estagiários</h1>
-    <p>
-        <label for="nome">Nome do Estagiário</label>
-        <input type="text" name="nome_estagiario" id="estagiario" placeholder="Nome do Estagiário" required="required">
-    </p>
-    <p>
-        <label for="matricula">Número de matrícula</label>
-        <input type="number" name="matricula" id="matricula" placeholder="Número de matricula" required="required">
-    </p>
-    <p>
-        <label for="Curso">Curso</label>
-        <select name="Cursos" id="curso" required="required">
-            <option value="Enfermagem"> Enfermagem</option>
-            <option value="Medicina"> Medicina</option>
-            <option value="Ciências-Biologicas"> Ciências Biologicas - Licenciatura</option>
-            <option value="Ciências-Biologicas"> Ciências Biologicas - Bacharelado</option>
-            <option value="Educação-Física">Educação Física - Licenciatura</option>
-            <option value="Educação-Física">Educação Física - Bacharelado</option>
-            <option value="Odontologia">Odontologia</option>
-        </select>
-    </p>
-    <p>
-        <input type="submit" name="cadastro" id="cadastro" placeholder="Cadastro" value="Cadastro">
-    </p>
+    <form action="./dados_estagiarios.xlsx" method="get">
+        <p>
+            <label for="nome">Nome do Estagiário</label>
+            <input type="text" name="nome_estagiario" id="estagiario" placeholder="Nome do Estagiário" required="required">
+        </p>
+        <p>
+            <label for="matricula">Número de matrícula</label>
+            <input type="number" name="matricula" id="matricula" placeholder="Número de matricula" required="required">
+        </p>
+        <p>
+            <label for="Curso">Curso</label>
+            <select name="Cursos" id="curso" required="required">
+                <option value="Enfermagem"> Enfermagem</option>
+                <option value="Medicina"> Medicina</option>
+                <option value="Ciências-Biologicas"> Ciências Biologicas - Licenciatura</option>
+                <option value="Ciências-Biologicas"> Ciências Biologicas - Bacharelado</option>
+                <option value="Educação-Física">Educação Física - Licenciatura</option>
+                <option value="Educação-Física">Educação Física - Bacharelado</option>
+                <option value="Odontologia">Odontologia</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" name="cadastro" id="cadastro" placeholder="Cadastro" value="Cadastro">
+        </p>
+    </form>
 </body>
 </html>
