@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #07527f;
+}
+
+body {
+    background-image: linear-gradient(180deg, #1e6391, #4b84b5);
+}
+
+main{
+    background-color: white;
+}
+
+#pagina_login{
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+    height: 500px;
+}
