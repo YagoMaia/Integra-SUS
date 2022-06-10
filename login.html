@@ -9,22 +9,31 @@
 </head>
 <body>
     <main id="pagina_login">
-        <h1>Login</h1>
-        <p>
-            <label for="usuario">Usuário</label>
-            <input type="text" name="nome_usuario" id="usuario" placeholder="Usuário" required="required">
-        </p>
-        <p>
-            <label for="password">Senha</label>
-            <input type="password" name="senha" id="senha" placeholder="Senha" required="required">
-        </p>
-        <p>
-            <input type="submit" name="login" id="login" placeholder="Login" value="Login">
-        </p>
-        <p class="link">
-            Ainda não é cadastrado?
-            <a href="cadastroestag.html"> Cadastro de estagiários </a>
-        </p>
+        <div id="left-content">
+            <h1>Faça login <br> E acesse seus dados</h1>
+        </div>
+        <div id="right-content">
+            <div id="card-login">
+                <h1>Login</h1>
+                <p class="campos">
+                    <label for="usuario">Usuário</label>
+                    <br>
+                    <input type="text" name="nome_usuario" id="usuario" placeholder="Usuário" required="required">
+                </p>
+                <p class="campos">
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required="required">
+                </p>
+                <p>
+                    <input type="submit" name="login" id="login" placeholder="Login" value="Login">
+                </p>
+                <p class="link">
+                    Ainda não é cadastrado?
+                    <a href="cadastroestag.html"> Cadastro de estagiários </a>
+                </p>
+            </div>
+        </div>
     </main>
 </body>
 </html>

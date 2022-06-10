@@ -9,17 +9,85 @@ header{
     background-color: #07527f;
 }
 
+header > h1 {
+    color: #00ccff
+}
+
 body {
-    background-image: linear-gradient(180deg, #1e6391, #4b84b5);
+    background-color: #201b2c;
 }
 
 main{
     background-color: white;
 }
 
+h1{
+    color: #00ccff
+}
+
 #pagina_login{
-    margin: auto;
+    display: flex;
+    background-color: #201b2c;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-content{
+    background-color: #2f2841;
     padding: 10px;
-    width: 70%;
-    height: 500px;
+    border-radius: 10px;
+    width: 50vh;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    }
+
+
+#left-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 100vh;
+}
+
+#pagina_login > h1, p{
+    text-align: center;
+    color: #00ccff;
+}
+
+#pagina_login > h1{
+    font-size: 70px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#card-login{
+    width: 60%;
+}
+
+p > input{
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+.campos{
+    font-size: 25px;
+}
+
+.link {
+    text-align: end;
+}
+
+input#login {
+    font-size: 25px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #201b2c;
+    background-color: #00ccff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 8px;
 }
