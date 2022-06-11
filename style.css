@@ -1,6 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+:root{
+    --background-color: #2b1c33;
+    --content-color: #2f2841;
+    --text-color: #f0ffffde;
+    --text-placeholder-color: #f0ffff94;
+    --background-color-placeholder: #514869;
+    --background-button-color: #00ff88;
+    --text-button-color: #2b134b;
+    --link-color: #55c0a7;
+    --hover-link-color: #00ffc3;
+    --title-color: #00ff88;
+}
+
 body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -10,12 +23,14 @@ body * {
     box-sizing: border-box;
 }
 
+/*  Estilo Página de Login */
+
 #pagina-login{
     height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2b1c33;
+    background-color: var(--background-color);
 }
 
 #right-content{
@@ -33,13 +48,13 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: var(--content-color);
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
 
 #card-login > h1{
-    color: rgb(9, 209, 176);
+    color: var(--title-color);
     font-weight: 800;
     margin: 0;
 }
@@ -58,8 +73,8 @@ body * {
     border-radius: 10px;
     border: none;
     padding: 15px;
-    background: #514869;
-    color: #f0ffffde;
+    background: var(--background-color-placeholder);
+    color: var(--text-color);
     font-size: 12pt;
     outline: none;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
@@ -67,16 +82,16 @@ body * {
 }
 
 .text-center > select > option{
-    color: #f0ffffde;
+    color: var(--text-color);
 }
 
 .text-field > label{
-    color: #f0ffffde;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .text-field > input::placeholder{
-    color: #f0ffff94;
+    color: var(--text-placeholder-color);
 }
 
 button#btn-login{
@@ -89,8 +104,8 @@ button#btn-login{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #2b134b;
-    background-color: #00ff88;
+    color: var(--text-button-color);
+    background-color: var(--background-button-color);
     cursor: pointer;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
@@ -106,13 +121,23 @@ button#btn-login{
 }
 
 #left-content > h1{
-    color: rgb(20, 170, 216);
+    color: var(--title-color);
     text-align: center;
 }
 
 .link{
-    color: #f0ffffde;
+    color: var(--text-color);
     text-align: center;
+}
+
+.link > a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link > a:hover{
+    color: var(--background-button-color);
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 950px){
@@ -148,9 +173,11 @@ button#btn-login{
     }
 } 
 
+/*  Estilo Página de Cadastro */
+
 h1#cadastro{
     text-align: center;
-    color: #ffffff
+    color: var(--text-color);
 }
 
 #pagina-cadastro{
@@ -158,7 +185,7 @@ h1#cadastro{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2b1c33;
+    background-color: var(--background-color);
 }
 
 #center-content{
@@ -167,7 +194,7 @@ h1#cadastro{
     justify-content: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: var(--content-color);
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
@@ -182,8 +209,8 @@ button#btn-cadastro{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #2b134b;
-    background-color: #00ff88;
+    color: var(--text-button-color);
+    background-color: var(--background-button-color);
     cursor: pointer;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
