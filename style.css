@@ -1,93 +1,108 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-*{
+body{
     margin: 0;
-    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-header{
-    background-color: #07527f;
-}
-
-header > h1 {
-    color: #00ccff
-}
-
-body {
-    background-color: #201b2c;
-}
-
-main{
-    background-color: white;
-}
-
-h1{
-    color: #00ccff
-}
-
-#pagina_login{
-    display: flex;
-    background-color: #201b2c;
+#pagina-login{
     height: 100vh;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    background-color: #2b1c33;
 }
 
 #right-content{
-    background-color: #2f2841;
-    padding: 10px;
-    border-radius: 10px;
-    width: 50vh;
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    }
-
-
-#left-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vh;
     height: 100vh;
-}
-
-#pagina_login > h1, p{
-    text-align: center;
-    color: #00ccff;
-}
-
-#pagina_login > h1{
-    font-size: 70px;
-    padding: 10px;
-    margin-bottom: 20px;
+    width: 50vh;
 }
 
 #card-login{
-    width: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
 
-p > input{
-    font-size: 80%;
+#card-login > h1{
+    color: rgb(9, 209, 176);
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-field > input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
+    box-sizing: border-box;
+}
+
+.text-field > label{
+    color: #f0ffffde;
     margin-bottom: 10px;
 }
 
-.campos{
-    font-size: 25px;
+.text-field > input::placeholder{
+    color: #f0ffff94;
 }
 
-.link {
-    text-align: end;
-}
-
-input#login {
-    font-size: 25px;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #201b2c;
-    background-color: #00ccff;
-    font-weight: 700;
-    padding: 10px;
+button#btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
     border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
+}
+
+
+#left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vh;
+    flex-direction: column;
+}
+
+#left-content > h1{
+    color: rgb(20, 170, 216);
+    text-align: center;
+}
+
+.link{
+    color: #f0ffffde;
+    text-align: center;
 }

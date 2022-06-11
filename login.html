@@ -8,26 +8,25 @@
     <title>Página de Login</title>
 </head>
 <body>
-    <main id="pagina_login">
-        <div id="left-content">
-            <h1>Faça login <br> E acesse seus dados</h1>
+    <main id="pagina-login">
+        <div id='left-content'>
+            <h1>Faça o login <br> E acesse seus dados</h1>
+            <img src="imagem-login.svg" alt="Imagem saúde">
         </div>
         <div id="right-content">
             <div id="card-login">
                 <h1>Login</h1>
-                <p class="campos">
+                <div class="text-field">
                     <label for="usuario">Usuário</label>
-                    <br>
                     <input type="text" name="nome_usuario" id="usuario" placeholder="Usuário" required="required">
-                </p>
-                <p class="campos">
+                </div>
+                <div class="text-field">
                     <label for="password">Senha</label>
-                    <br>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required="required">
-                </p>
-                <p>
-                    <input type="submit" name="login" id="login" placeholder="Login" value="Login">
-                </p>
+                </div>
+                <button id="btn-login">
+                    Login
+                </button>
                 <p class="link">
                     Ainda não é cadastrado?
                     <a href="cadastroestag.html"> Cadastro de estagiários </a>
