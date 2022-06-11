@@ -6,6 +6,10 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
 #pagina-login{
     height: 100vh;
     display: flex;
@@ -19,7 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 50vh;
+    width: 60vh;
 }
 
 #card-login{
@@ -106,3 +110,36 @@ button#btn-login{
     color: #f0ffffde;
     text-align: center;
 }
+
+@media only screen and (max-width: 950px){
+    #card-login{
+        width: 85%;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #pagina-login{
+        flex-direction: column;
+    }
+    #left-login > h1{
+        display: none;
+    }
+
+    #left-login{
+        width: 100%;
+        height: auto;
+    }
+    #right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    #left-login-image{
+        width: 50vh;
+    }
+
+    #card-login{
+        width: 90%;
+    }
+} 
