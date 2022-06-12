@@ -36,6 +36,10 @@ footer{
     font-weight: 700;
 }
 
+#login-cadastro{
+    background-color: var(--background-color);
+}
+
 /*  Estilo Página Inicial*/
 
 #header-main {
@@ -89,7 +93,7 @@ footer{
 /*  Estilo Página de Login */
 
 #pagina-login{
-    height: 100vh;
+    height: 97vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -244,7 +248,7 @@ h1#cadastro{
 }
 
 #pagina-cadastro{
-    height: 100vh;
+    height: 97vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
