@@ -125,7 +125,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 97vh;
     width: 53vh;
 }
 
@@ -203,7 +203,7 @@ button#btn-login{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 97vh;
     width: 50vh;
     flex-direction: column;
 }
