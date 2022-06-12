@@ -47,23 +47,33 @@ footer{
 }
 
 #nav-main{
-    padding: 5px;
+    padding-bottom: 5px;
 }
 
-#nav-main > a{
+#nav-div{
+    text-align: right;
+}
+
+#nav-div > a{
     padding: 10px;
-    margin-left: 5px;
     color: var(--link-color);
     text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 20px;
+    transition-duration: 0.5s;
 }
 
-#nav-main > a:hover{
+#nav-div > a:hover{
     color: var(--hover-link-color);
+    background-color: var(--background-color-placeholder)
 }
 
 #title-main{
     color: var(--title-color);
     text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
 }
 
 #main-main{
@@ -87,13 +97,24 @@ footer{
 
 #main-content > p{
     margin-bottom: 10px;
-    padding: 10px
+    padding: 10px;
+    text-align: justify;
+}
+
+#image-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#image-main > img{
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 100%;
 }
 
 /*  Estilo Página de Login */
 
 #pagina-login{
-    height: 97vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
