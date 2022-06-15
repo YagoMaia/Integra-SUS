@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pacientes</title>
 </head>
 
 <body>
-    <h1>Pacientes</h1>
-    <p>
-        <label for="">CPF do Paciente</label>
-        <input type="text" name="CPF_pacientes" id="CPF_pacientes" maxlength="11">
-    </p>
-    <p>
-        <label for="">Sintomas</label>
-        <input type="text" name="sintomas_pacientes" id="sintomas_pacientes">
-    </p>
-    <p>
-        <label for="">Tempo de ocorrência</label>
-        <input type="text" name="recorrencia" id="recorrencia">
-    </p>
-    <p>
-        <label for="">Tempo de recorrência</label>
-        <input type="text" name="recorrencia" id="recorrencia">
-    </p>
-    <p>
-        <input type="submit" value="Enviar" id="enviar">
-    </p>
+    <main id="pagina-cadastro">
+        <div id="cadastro-content">
+            <form action="" method="get">
+                <h1 id='cadastro'>Pacientes</h1>
+                <div class="text-field">
+                    <label for="">CPF do Paciente</label>
+                    <input type="number" name="CPF_pacientes" id="CPF_pacientes" maxlength="11" required="required" placeholder="CPF">
+                </div>
+                <div class="text-field">
+                    <label for="">Sintomas</label>
+                    <input type="text" name="sintomas_pacientes" id="sintomas_pacientes" required="required"
+                    placeholder="Sintomas">
+                </div>
+                <div class="text-field">
+                    <label for="">Tempo de ocorrência</label>
+                    <input type="text" name="occorencia" id="ocorrencia" required="required"
+                    placeholder="Tempo de ocorrência">
+                </div>
+                <div class="text-field">
+                    <label for="">Tempo de recorrência</label>
+                    <input type="text" name="recorrencia" id="recorrencia" required="required" placeholder="Tempo de recorrência">
+                </div>
+                <button id="btn">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>&copy;Yago Maia</p>  
+    </footer>
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
     --background-color: #2b1c33;
     --content-color: #2f2841;
     --text-color: #f0ffffde;
@@ -11,14 +11,15 @@
     --text-button-color: #2b134b;
     --link-color: #55c0a7;
     --hover-link-color: #00ffc3;
-    --title-color: #00ff88; /* Mudar cor ou até mesmo fonte*/
+    --title-color: #00ff88;
+    /* Mudar cor ou até mesmo fonte*/
 }
 
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     background-color: #504864;
@@ -29,14 +30,14 @@ body * {
 }
 
 
-footer{
+footer {
     text-align: center;
     padding: 1px;
     color: var(--text-color);
     font-weight: 700;
 }
 
-#login-cadastro{
+#footer {
     background-color: var(--background-color);
 }
 
@@ -46,15 +47,15 @@ footer{
     background-color: var(--content-color);
 }
 
-#nav-main{
+#nav-main {
     padding-bottom: 5px;
 }
 
-#nav-div{
+#nav-div {
     text-align: right;
 }
 
-#nav-div > a{
+#nav-div>a {
     padding: 10px;
     color: var(--link-color);
     text-decoration: none;
@@ -64,24 +65,24 @@ footer{
     transition-duration: 0.5s;
 }
 
-#nav-div > a:hover{
+#nav-div>a:hover {
     color: var(--hover-link-color);
     background-color: var(--background-color-placeholder)
 }
 
-#title-main{
+#title-main {
     color: var(--title-color);
     text-align: center;
     font-size: 40px;
     padding-top: 10px;
 }
 
-#main-main{
+#main-main {
     height: 100%;
     margin-top: 30px
 }
 
-#main-content{
+#main-content {
     width: 80%;
     margin: auto;
     background-color: white;
@@ -90,23 +91,23 @@ footer{
 }
 
 
-#main-content > h2{
+#main-content>h2 {
     text-align: center;
     padding: 20px;
 }
 
-#main-content > p{
+#main-content>p {
     margin-bottom: 10px;
     padding: 10px;
     text-align: justify;
 }
 
-#image-main{
+#image-main {
     display: flex;
     justify-content: space-around;
 }
 
-#image-main > img{
+#image-main>img {
     max-width: 300px;
     padding: 10px;
     border-radius: 100%;
@@ -114,22 +115,22 @@ footer{
 
 /*  Estilo Página de Login */
 
-#pagina-login{
+#pagina-login {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--background-color);
 }
 
-#right-content{
+#right-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 97vh;
-    width: 53vh;
+    width: 60vh;
 }
 
-#card-login{
+#card-login {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -141,13 +142,13 @@ footer{
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
 
-#card-login > h1{
+#card-login>h1 {
     color: var(--title-color);
     font-weight: 800;
     margin: 0;
 }
 
-.text-field{
+.text-field {
     margin: 10px 0;
     width: 100%;
     display: flex;
@@ -156,7 +157,8 @@ footer{
     justify-content: center;
 }
 
-.text-field > input, select{
+.text-field>input,
+select {
     width: 100%;
     border-radius: 10px;
     border: none;
@@ -169,23 +171,23 @@ footer{
     box-sizing: border-box;
 }
 
-.text-center > select > option{
+.text-center>select>option {
     color: var(--text-color);
 }
 
-.text-field > label{
+.text-field>label {
     color: var(--text-color);
     margin-bottom: 10px;
 }
 
-.text-field > input::placeholder{
+.text-field>input::placeholder {
     color: var(--text-placeholder-color);
 }
 
-button#btn-login{
+button#btn {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin-top: 25px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -208,67 +210,70 @@ button#btn-login{
     flex-direction: column;
 }
 
-#left-content > h1{
+#left-content>h1 {
     color: var(--title-color);
     text-align: center;
 }
 
-.link{
+.link {
     color: var(--text-color);
     text-align: center;
+    margin-top: 25px;
 }
 
-.link > a{
+.link>a {
     color: var(--link-color);
     text-decoration: none;
 }
 
-.link > a:hover{
+.link>a:hover {
     color: var(--background-button-color);
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 950px){
-    #card-login{
+@media only screen and (max-width: 950px) {
+    #card-login {
         width: 85%;
 
     }
 }
 
-@media only screen and (max-width: 600px){
-    #pagina-login{
+@media only screen and (max-width: 600px) {
+    #pagina-login {
         flex-direction: column;
     }
-    #left-login > h1{
+
+    #left-login>h1 {
         display: none;
     }
 
-    #left-login{
+    #left-login {
         width: 100%;
         height: auto;
     }
+
     #right-login {
         width: 100%;
         height: auto;
     }
 
-    #left-login-image{
+    #left-login-image {
         width: 50vh;
     }
 
-    #card-login{
+    #card-login {
         width: 90%;
     }
-} 
+}
 
 /*  Estilo Página de Cadastro */
 
-h1#cadastro{
+h1#cadastro {
     text-align: center;
     color: var(--text-color);
 }
 
-#pagina-cadastro{
+#pagina-cadastro {
     height: 97vh;
     display: flex;
     justify-content: space-around;
@@ -276,7 +281,7 @@ h1#cadastro{
     background-color: var(--background-color);
 }
 
-#cadastro-content{
+#cadastro-content {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -287,29 +292,13 @@ h1#cadastro{
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
 }
 
-button#btn-cadastro{
-    width: 100%;
-    padding: 16px 0px;
-    margin-top: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--text-button-color);
-    background-color: var(--background-button-color);
-    cursor: pointer;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.363);
-}
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #cadastro-content {
         width: 85%;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     #cadastro-content {
         width: 90%;
     }
