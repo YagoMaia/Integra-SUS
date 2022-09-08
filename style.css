@@ -29,6 +29,13 @@ body * {
     box-sizing: border-box;
 }
 
+p{
+    font-size: 1.3em;
+}
+
+h2{
+    font-size: 2em;
+}
 
 footer {
     text-align: center;
