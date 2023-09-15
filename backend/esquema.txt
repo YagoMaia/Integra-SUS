@@ -1,0 +1,3 @@
+Uma planilha com os estagiários cadastrados -> Cadastrar um banco de dados
+Uma planilha com os pacinetes cadastrados -> BD
+Uma planilha com as doenças e sintomas -> BD
